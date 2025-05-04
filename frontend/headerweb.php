@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">    
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="/web/frontend/assets/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/web/frontend/assets/font/fontawesome-free-6.7.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/web/frontend/assets/css/bootstrap.min.css">
     
     
    
@@ -39,12 +39,12 @@
             <div class="header_with_logo">
                 <div class="header_logo_wap">
                     <div class="header_logo">
-                        <a class="navbar-brand" href="#trangchu">
-                            <img src="assets/img/logo-dhtm.png" alt="TMU">
+                        <a class="navbar-brand" href="/web/frontend/trang chu/trangchu.php">
+                            <img src="/web/frontend/assets/img/logo-dhtm.png" alt="TMU">
                         </a>
                     </div>
                     <div class="header_logo_text">
-                        <img src="assets/img/banner-text-tmu.png" alt="TMU">
+                        <img src="/web/frontend/assets/img/banner-text-tmu.png" alt="TMU">
                     </div>
                 </div>
 
@@ -61,10 +61,10 @@
                     </div>
                     <div class="header_lang">
                         <button class="header_lang_btn btn">
-                            <img class="header_lang_img" src="assets/img/Flag_of_Vietnam.svg" alt="VietNam">
+                            <img class="header_lang_img" src="/web/frontend/assets/img/Flag_of_Vietnam.svg" alt="VietNam">
                         </button>
                         <div class="header_lang_list">
-                            <img class="header_lang_img header_lang_list_img" src="assets/img/Flag_of_Vietnam.svg" alt="VietNam">
+                            <img class="header_lang_img header_lang_list_img" src="/web/frontend/assets/img/Flag_of_Vietnam.svg" alt="VietNam">
                             <span class="header_lang_list_text">Vietnamese</span>
                         </div>
                     </div>
@@ -83,107 +83,102 @@
 
                             <div class="collapse navbar-collapse" id="worldNav">
                             <ul class="navbar-nav">
-  <li class="nav-item">
-    <a href="#" class="nav-link" target="_self">
-      &nbsp;<i class="fa fa-home"></i>&nbsp;
-    </a>
-  </li>
+                                <li class="nav-item">
+                                    <a href="/web/frontend/trang chu/trangchu.php" class="nav-link" target="_self">
+                                    &nbsp;<i class="fa fa-home"></i>&nbsp;
+                                    </a>
+                                </li>
+                                <!-- GIỚI THIỆU -->
+                                <li class="nav-item dropdown introduce_item">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Giới thiệu</a>
+                                    <ul class="dropdown-menu introduce_item_list">
+                                    <li><a class="dropdown-item" href="/web/frontend/gioi_thieu/gioithieuchung.php">Giới thiệu chung</a></li>
+                                    <li><a class="dropdown-item" href="/web/frontend/gioi_thieu/sumangmuctieu.php">Sứ mệnh mục tiêu</a></li>
+                                    </ul>
+                                </li>
 
-  <!-- GIỚI THIỆU -->
-  <li class="nav-item dropdown introduce_item">
-    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Giới thiệu</a>
-    <ul class="dropdown-menu introduce_item_list">
-      <li><a class="dropdown-item" href="../gioi_thieu/gioithieuchung.php">Giới thiệu chung</a></li>
-      <li><a class="dropdown-item" href="../gioi_thieu/sumangmuctieu.php">Sứ mệnh mục tiêu</a></li>
-    </ul>
-  </li>
-
-  <!-- TIN TỨC -->
-  <li class="nav-item">
-    <a href="../tin_tuc/user.php" class="nav-link">Tin tức</a>
-</li>
-
-
-  <!-- ĐÀO TẠO -->
-  <li class="nav-item">
-    <a href="../daotao/user.php" class="nav-link">Đào Tạo </a>
-</li>
-
-  <!-- TUYỂN SINH -->
-  <li class="nav-item">
-    <a href="../tuyensinh/user.php" class="nav-link">Tuyển Sinh </a>
-</li>
+                                <!-- TIN TỨC -->
+                                <li class="nav-item">
+                                    <a href="/web/frontend/tin_tuc/user.php" class="nav-link">Tin tức</a>
+                                </li>
 
 
+                                <!-- ĐÀO TẠO -->
+                                <li class="nav-item">
+                                    <a href="/web/frontend/daotao/user.php" class="nav-link">Đào Tạo </a>
+                                </li>
 
-                                
-                                
-                            </div>
-                        </nav>
-                    </div>
+                                <!-- TUYỂN SINH -->
+                                <li class="nav-item">
+                                    <a href="/web/frontend/tuyensinh/user.php" class="nav-link">Tuyển Sinh </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
-    </header>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
+    </div>
+</header>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="/web/frontend/assets/js/bootstrap.min.js"></script>
 <script >
 document.addEventListener('DOMContentLoaded', function () {
-    const btn = document.querySelector('.header_lang_btn');
-    const list = document.querySelector('.header_lang_list');
+const btn = document.querySelector('.header_lang_btn');
+const list = document.querySelector('.header_lang_list');
 
-    // Toggle hiển thị khi click vào nút
-    btn.addEventListener('click', function (event) {
-        event.stopPropagation(); // Ngăn sự kiện click lan ra ngoài
-        list.style.display = (list.style.display === 'flex') ? 'none' : 'flex';
-    });
+// Toggle hiển thị khi click vào nút
+btn.addEventListener('click', function (event) {
+    event.stopPropagation(); // Ngăn sự kiện click lan ra ngoài
+    list.style.display = (list.style.display === 'flex') ? 'none' : 'flex';
+});
 
-    // Ẩn khi click ra ngoài danh sách
-    document.addEventListener('click', function (e) {
-        if (!list.contains(e.target) && !btn.contains(e.target)) {
-            list.style.display = 'none';
-        }
-    });
+// Ẩn khi click ra ngoài danh sách
+document.addEventListener('click', function (e) {
+    if (!list.contains(e.target) && !btn.contains(e.target)) {
+        list.style.display = 'none';
+    }
+});
 });
 
 document.querySelector('.introduce_item').onmouseover = function (){
-    document.querySelector('.introduce_item_list').style.display='block';
+document.querySelector('.introduce_item_list').style.display='block';
 }
 document.querySelector('.introduce_item').onmouseout = function (){
-    document.querySelector('.introduce_item_list').style.display='none';
+document.querySelector('.introduce_item_list').style.display='none';
 }
 document.querySelector('.introduce_item_list').onmouseout = function(){
-    document.querySelector('.introduce_item_list').style.display='none';
+document.querySelector('.introduce_item_list').style.display='none';
 }
 
 document.querySelector('.news_item').onmouseover = function (){
-    document.querySelector('.news_item_list').style.display='block';
+document.querySelector('.news_item_list').style.display='block';
 }
 document.querySelector('.news_item').onmouseout = function (){
-    document.querySelector('.news_item_list').style.display='none';
+document.querySelector('.news_item_list').style.display='none';
 }
 document.querySelector('.dropdown-menu').onmouseout = function(){
-    document.querySelector('.news_item_list').style.display='none';
+document.querySelector('.news_item_list').style.display='none';
 }
 
 document.querySelector('.trainning_item').onmouseover = function (){
-    document.querySelector('.trainning_item_list').style.display='block';
+document.querySelector('.trainning_item_list').style.display='block';
 }
 document.querySelector('.trainning_item').onmouseout = function (){
-    document.querySelector('.trainning_item_list').style.display='none';
+document.querySelector('.trainning_item_list').style.display='none';
 }
 document.querySelector('.trainning_item_list').onmouseout = function(){
-    document.querySelector('.trainning_item_list').style.display='none';
+document.querySelector('.trainning_item_list').style.display='none';
 }
 
 document.querySelector(' .admission_item').onmouseover = function (){
-    document.querySelector(' .admission_item_list').style.display='block';
+document.querySelector(' .admission_item_list').style.display='block';
 }
 document.querySelector(' .admission_item').onmouseout = function (){
-    document.querySelector('.admission_item_list').style.display='none';
+document.querySelector('.admission_item_list').style.display='none';
 }
 document.querySelector('.admission_item_list').onmouseout = function(){
-    document.querySelector('.admission_item_list').style.display='none';
+document.querySelector('.admission_item_list').style.display='none';
 }
 
 
@@ -191,3 +186,8 @@ document.querySelector('.admission_item_list').onmouseout = function(){
 </body>
 
 </html>
+
+
+
+                                
+                                

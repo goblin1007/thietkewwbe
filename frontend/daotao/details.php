@@ -27,16 +27,13 @@ if ($type == 'dai_hoc_chinh_quy') {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
   <title>Chương trình đào tạo</title>
+  <?php include("../headerweb.php"); ?>
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, sans-serif;
       background-color: #f9f9f9;
-      padding: 40px;
+      
     }
     h1 {
       text-align: center;
@@ -110,7 +107,7 @@ if ($type == 'dai_hoc_chinh_quy') {
     ];
     ?>
     <div class="breadcrumb">
-      <a href="user.php">Trang chủ</a> &gt;
+      <a href="/web/frontend/trang chu/trangchu.php">Trang chủ</a> &gt;
       <a href="user.php">Đào tạo</a> &gt;
       <span><?= $breadcrumb[$type] ?? 'Chương trình' ?></span>
     </div>
@@ -143,6 +140,6 @@ if ($type == 'dai_hoc_chinh_quy') {
   
   <script src="details.js"></script>
 </body>
-</html>
+<?php include("../footer_web.php"); ?>
 
 <?php $conn->close(); ?>

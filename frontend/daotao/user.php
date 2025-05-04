@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
+
   <title>Đào tạo | Đại học Thương mại</title>
+  <?php include("../headerweb.php"); ?>
   <link rel="stylesheet" href="sty.css">
-</head>
+
 <body>
 <div class="banner"></div>
 
@@ -88,5 +86,6 @@
     </div>
 
   </div>
+  <?php include("../footer_web.php"); ?>
 </body>
 </html>

@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
+
   <title>Mục tiêu phát triển đến năm 2030</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <?php include("../headerweb.php"); ?>
+  <link rel="stylesheet" href="style_gt.css">
+
 <body>
 <div class="container">
 <div class="breadcrumb"  style="display: flex;
@@ -99,6 +97,7 @@
     </section>
 
   </div> <!-- End content -->
- 
+ </div
 </body>
-</html>
+
+<?php include("../footer_web.php"); ?>

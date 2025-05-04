@@ -6,6 +6,11 @@ $sql = "SELECT * FROM baiviet WHERE id = $id";
 $result = $conn->query($sql);
 $row = $result->fetch_assoc();
 ?>
+<title><?= $row['tieu_de'] ?></title>
+
+<link rel="stylesheet" href="/web/frontend/tin_tuc/news_detail.css"?v=5555>
+
+<?php include("../headerweb.php"); ?>
 <div class="breadcrumb"  style="display: flex;
     margin-bottom: 30px;
     font-size: 18px;
@@ -18,12 +23,8 @@ $row = $result->fetch_assoc();
         <span class="current">TIN TỨC VÀ SỰ KIỆN </span>
     </div>
 
-    <title><?= $row['tieu_de'] ?></title>
-
-    <link rel="stylesheet" href="news_detail.css">
-</head>
-<body>
-
+    
+<div class="body">
     <h1><?= htmlspecialchars($row['tieu_de']) ?></h1>
     <div class="meta">
         Ngày đăng: <?= date("d/m/Y", strtotime($row['ngay_dang'])) ?> |
@@ -38,4 +39,7 @@ $row = $result->fetch_assoc();
         <?= nl2br($row['noidung']) ?>
     </div>
 
+</div>
+
+<?php include("../footer_web.php"); ?>
 

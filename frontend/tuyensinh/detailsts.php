@@ -23,11 +23,11 @@ if ($type == 'phuong_thuc') {
 }
 ?>
 
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
+
   <title>Tuyển sinh đại học</title>
+
+  <?php include("../headerweb.php"); ?>
+
   <style>
     body {
   font-family: 'Segoe UI', Tahoma, sans-serif;
@@ -100,7 +100,7 @@ if ($type == 'phuong_thuc') {
       text-decoration: underline;
     }
   </style>
-</head>
+
 <body>
   <div class="container">
     <?php
@@ -175,3 +175,5 @@ if ($type == 'phuong_thuc') {
 </html>
 
 <?php $conn->close(); ?> 
+
+<?php include("../footer_web.php"); ?>

@@ -1,11 +1,8 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Tổng quan về Trường Đại học Thương mại</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+ 
+  <?php include("../headerweb.php"); ?>
+  <link rel="stylesheet" href="/web/frontend/gioi_thieu/style_gt.css">
 <body>
 <div class="container">
 <div class="breadcrumb"  style="display: flex;
@@ -138,4 +135,5 @@
   <script src="script.js"></script>
   
 </body>
-</html>
+
+<?php include("../footer_web.php"); ?>

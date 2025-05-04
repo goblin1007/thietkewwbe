@@ -50,6 +50,17 @@ $result = $conn->query("SELECT * FROM contact_form ORDER BY created_at DESC");
         font-size: 14px;
     }
 
+    .action-button {
+        padding: 6px 10px;
+        background-color: #3498db;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+        font-size: 13px;
+    }
+
     @media (max-width: 768px) {
         .contact-table th, .contact-table td {
             padding: 10px;
@@ -71,6 +82,7 @@ $result = $conn->query("SELECT * FROM contact_form ORDER BY created_at DESC");
                     <th>Chương trình</th>
                     <th>Ghi chú</th>
                     <th>Thời gian</th>
+                    
                 </tr>
             </thead>
             <tbody>
@@ -83,11 +95,12 @@ $result = $conn->query("SELECT * FROM contact_form ORDER BY created_at DESC");
                             <td><?= htmlspecialchars($row['train_program']) ?></td>
                             <td><?= nl2br(htmlspecialchars($row['note'])) ?></td>
                             <td><?= htmlspecialchars($row['created_at']) ?></td>
+                            
                         </tr>
                     <?php endwhile; ?>
                 <?php else: ?>
                     <tr>
-                        <td colspan="6" style="text-align: center;">Chưa có liên hệ nào.</td>
+                        <td colspan="7" style="text-align: center;">Chưa có liên hệ nào.</td>
                     </tr>
                 <?php endif; ?>
             </tbody>

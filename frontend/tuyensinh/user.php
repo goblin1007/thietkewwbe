@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-  <meta charset="UTF-8">
+
   <title>Tuyển sinh | Đại học Thương mại</title>
+  <?php include("../headerweb.php"); ?>
   <link rel="stylesheet" href="styuser.css">
-</head>
+
 <body>
   <div class="banner">
   </div>
@@ -76,5 +74,4 @@
     </div>
     </div>
   </body>
-  </html>
-  
+  <?php include("../footer_web.php"); ?>

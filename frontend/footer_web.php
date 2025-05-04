@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="trangchu/assets/css/style.css">
+<link rel="stylesheet" href="/web/frontend/assets/css/style.css?v=123">
 <footer>
     <section class="footer_contact">
         <div class="container">
@@ -88,15 +88,15 @@
                     </span>
                     <div class="footer_social_icon">
                         <a href="https://www.facebook.com/thuongmaiuniversity/">
-                            <img src="./assets/img/ic-fb.png" alt="fb">
+                            <img src="/web/frontend/assets/img/ic-fb.png" alt="fb">
                         </a>
                         <a href="https://www.facebook.com/thuongmaiuniversity/">
-                            <img src="./assets/img/ic-mess.png" alt="mess">                            </a>
+                            <img src="/web/frontend/assets/img/ic-mess.png" alt="mess">                            </a>
                         <a href="https://www.youtube.com/channel/UC9-NJM8V8oXewEIfPHica_Q">
-                            <img src="./assets/img/ic-ytb.png" alt="ytb">
+                            <img src="/web/frontend/assets/img/ic-ytb.png" alt="ytb">
                         </a>
                         <a href="">
-                            <img src="./assets/img/ic-in.png" alt="ins">
+                            <img src="/web/frontend/assets/img/ic-in.png" alt="ins">
                         </a>
                     </div>
                 </div>
@@ -112,7 +112,7 @@
         <div class="col-lg-6 col-md-12 d-flex">
             <div class="me-3">
             <a href="" class="logo-ft">
-                <img src="./assets/img/logo.png" alt="logo_footer" >
+                <img src="/web/frontend/assets/img/logo.png" alt="logo_footer" >
             </a>
             </div>
             <div class="footer_add">
@@ -152,7 +152,8 @@
 
 
 <script >
-const inputs = document.querySelectorAll('.input_contact_form');
+document.addEventListener("DOMContentLoaded", function () {
+    const inputs = document.querySelectorAll('.input_contact_form');
 inputs.forEach(input => {
     const label = input.nextElementSibling;
 
@@ -180,7 +181,10 @@ document.getElementById("submit_contact").addEventListener("click", function () 
     const fullname = document.getElementById("fullname_footer").value.trim();
     const phone = document.getElementById("phone_footer").value.trim();
     const email = document.getElementById("email_footer").value.trim();
-    const modalContent = modal.querySelector(".notice_content span");
+    const train_program = document.getElementById("train_program_footer").value;
+    const note = document.getElementById("note_footer").value.trim();
+
+    const modalContent = document.querySelector(".notice_content span");
     const phoneRegex = /^(0|\+84)(3|5|7|8|9)[0-9]{8}$/;
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
@@ -224,28 +228,9 @@ document.getElementById("submit_contact").addEventListener("click", function () 
       }
     
     document.querySelector(".footer_contact_form").submit();
-  });
-
-</script>
-<script src="trangchu.js"></script>
-<script>
+    
     // Set year dynamically
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    document.getElementById("submit_contact").addEventListener("click", function () {
-        const fullname = document.getElementById("fullname_footer").value.trim();
-        const phone = document.getElementById("phone_footer").value.trim();
-        const email = document.getElementById("email_footer").value.trim();
-        const train_program = document.getElementById("train_program_footer").value;
-        const note = document.getElementById("note_footer").value.trim();
-
-        // Kiểm tra nếu thiếu thông tin bắt buộc
-        if (!fullname || !phone || !email) {
-            document.querySelector(".notice_content span").textContent = "Vui lòng điền đầy đủ Họ tên, SĐT và Email.";
-            document.getElementById("modal").style.display = "block";
-            return;
-        }
-
         // Gửi dữ liệu qua AJAX
         fetch("save_contact.php", {
             method: "POST",
@@ -275,8 +260,9 @@ document.getElementById("submit_contact").addEventListener("click", function () 
         });
     });
 
-    // Đóng modal khi nhấn OK
-    document.querySelector(".modal button").addEventListener("click", function () {
-        document.getElementById("modal").style.display = "none";
-    });
+});
+
+
 </script>
+<script src="/web/frontend/trangchu/trangchu.js"></script>
+

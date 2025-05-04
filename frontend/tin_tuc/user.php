@@ -51,9 +51,8 @@ if (!array_key_exists($active_category, $news_categories)) {
 }
 ?>
 
-
-<link rel="stylesheet" href="user.css">
-<link rel="stylesheet" href="assets/css/style.css">
+<?php include("../headerweb.php"); ?>
+<link rel="stylesheet" href="/web/frontend/tin_tuc/user.css"?v=222>
 
 <div class="container">
     <div class="breadcrumb">
@@ -93,4 +92,4 @@ if (!array_key_exists($active_category, $news_categories)) {
     </div>
 </div>
 
-
+<?php include("../footer_web.php"); ?>
