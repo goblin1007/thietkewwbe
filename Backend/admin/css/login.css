@@ -1,0 +1,158 @@
+
+        body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #0b326b;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    background: #ffffff;
+    padding: 50px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 380px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-header {
+    text-align: center;
+}
+
+.logo {
+    width: 100px; /* TO HƠN */
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #0b326b;
+}
+
+.subtitle {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.login-form {
+    flex-grow: 1;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.input-group .icon {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    background: transparent;
+    width: 100%;
+    font-size: 15px;
+}
+
+.toggle-password {
+    cursor: pointer;
+    font-size: 16px;
+    color: #888;
+    transition: color 0.3s ease;
+}
+.toggle-password:hover {
+    color: #000;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    font-size: 13px;
+    color: #444;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.remember input {
+    margin-right: 6px;
+}
+
+.forgot {
+    text-decoration: none;
+    color: #0b326b;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+.forgot:hover {
+    color: #09264d;
+}
+
+.login-button {
+    background-color: #0b326b;
+    color: #fff;
+    border: none;
+    padding: 13px;
+    width: 100%;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+.login-button:hover {
+    background-color: #09264d;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+    

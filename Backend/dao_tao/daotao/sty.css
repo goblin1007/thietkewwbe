@@ -1,0 +1,181 @@
+body {
+    font-family: 'OpenSansR', Arial, 'sans-serif';
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #ffffff;
+    color: #333333; /* mới */
+    font-weight: 400; /* chuyển về regular theo chuẩn */
+}
+
+.breadcrumb {
+    margin: 20px 40px;
+    font-size: 14px;
+    color: #0056b3;; /* theo màu tiêu đề phụ */
+    font-weight: bold;
+}
+
+.intro {
+    padding: 0 40px 20px 40px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    color: #333333;
+    font-weight: 400;
+}
+
+.training-section {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 40px;
+}
+
+.training-box {
+    display: flex;
+    background: #f2f2f2; /* cập nhật theo chuẩn */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    width: 100%;
+}
+
+.training-box img {
+    width: 40%;
+    object-fit: cover;
+}
+
+.training-content {
+    padding: 20px;
+    width: 60%;
+}
+
+.training-content h2 {
+    position: relative;
+    display: inline-block;
+    color: #0056b3;; /* màu tiêu đề phụ */
+    font-weight: bold; /* tiêu đề phụ */
+    margin-bottom: 15px;
+    font-size: 22px; /* cập nhật từ 20px */
+    text-transform: uppercase;
+}
+
+.training-content h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 100%;
+    height: 1px;
+    background-color: #0056b3 ;
+}
+
+.training-content p {
+    margin: 10px 0;
+    font-size: 16px; /* cập nhật từ 15px */
+    line-height: 22px;
+    color: #333333;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.training-content ul {
+    list-style: none;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.training-content ul li {
+    margin-bottom: 6px;
+    position: relative;
+    padding-left: 16px;
+}
+
+.training-content ul li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;
+    height: 6px;
+    background-color: #0056b3;
+    border-radius: 50%;
+}
+
+.training-content ul li a {
+    color: #0056b3;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.training-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.training-content .more-link {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 16px; /* thêm dòng này để canh thẳng với <li> */
+    color: #0056b3;
+    text-decoration: none;
+    border: 1px solid #0056b3;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: #ffffff;
+    transition: 0.3s;
+}
+
+.training-content .more-link:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+/* Tiêu đề lớn nếu có h1 */
+h1 {
+    font-size: 26px;
+    line-height: 32px;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+    margin-bottom: 22px;
+    color: #0056b3;
+    font-weight: 600;
+}
+
+.banner {
+    background-image: url('img/banner 2.jpg'); /* chỉnh lại đường dẫn */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+.training-photo-1 {
+    width: 100%;
+  height: 200%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.training-photo-2 {
+    width: 100%;
+  height: 200%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.training-photo-3 {
+    width: 100%;
+  height: 200%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.training-photo-4 {
+    width: 100%;
+  height: 200%;
+  object-fit: cover;
+  border-radius: 10px;
+}
