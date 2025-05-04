@@ -161,9 +161,7 @@ header{
     font-size: 1.5rem;
     color: var(--white-color);
 }
-.header_lang{
-    
-}
+
 
 .header_lang_btn{
     height: 20px;
@@ -566,9 +564,8 @@ header{
 .main-footer{
     background-image: url("/assets/img/bg-footer.jpg");
    padding: 50px 0 70px 0;
-   
-    background: #ce1a1a;
-    color: white; /* Đảm bảo chữ dễ nhìn trên nền tối */
+   background: #1b4a98 ; 
+    color: white; 
 }
 
 
