@@ -8,9 +8,10 @@ $row = $result->fetch_assoc();
 ?>
 <title><?= $row['tieu_de'] ?></title>
 
-<link rel="stylesheet" href="/web/frontend/tin_tuc/news_detail.css"?v=5555>
+<link rel="stylesheet" href="/web/frontend/tin_tuc/news_detail.css">
 
 <?php include("../headerweb.php"); ?>
+<div class="container"> 
 <div class="breadcrumb"  style="display: flex;
     margin-bottom: 30px;
     font-size: 18px;
@@ -34,12 +35,12 @@ $row = $result->fetch_assoc();
 
     <img src="uploads/<?= $row['hinhanh'] ?>" alt="<?= $row['tieu_de'] ?>">
 
-    <h2><?= htmlspecialchars($row['mo_ta_ngan']) ?></h2>
+    <h2 style = ' margin-top: 25px'><?= htmlspecialchars($row['mo_ta_ngan']) ?></h2>
     <div>
         <?= nl2br($row['noidung']) ?>
     </div>
 
 </div>
-
+</div>
 <?php include("../footer_web.php"); ?>
 

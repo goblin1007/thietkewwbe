@@ -86,7 +86,7 @@
                     <span>
                         Kết nối với chúng tôi:
                     </span>
-                    <div class="footer_social_icon" style = "display: flex ">
+                    <div class="footer_social_icon">
                         <a href="https://www.facebook.com/thuongmaiuniversity/">
                             <img src="/web/frontend/assets/img/ic-fb.png" alt="fb">
                         </a>

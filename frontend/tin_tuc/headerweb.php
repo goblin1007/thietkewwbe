@@ -49,17 +49,16 @@
                 </div>
 
                 <div class="header_search_lang">
-                <div class="header_search">
-                    <form action="#" class="search-form" id="formHome" method="get">
-                        <button class="btn btn_search" type="submit">
-                            <span class="header_search_icon">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </span>
-                        </button>
-                        <input type="text" name="keyword" class="header_search_input" placeholder="Tìm kiếm">
-                    </form>
-                </div>
-
+                    <div class="header_search">
+                        <form action="" class="search-form" id="formHome">
+                            <button class="btn btn_search" type="submit">
+                                <span class="header_search_icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </span>
+                            </button>
+                            <input type="text" class="header_search_input" placeholder="Tìm kiếm">
+                        </form>
+                    </div>
                     <div class="header_lang">
                         <button class="header_lang_btn btn">
                             <img class="header_lang_img" src="/web/frontend/assets/img/Flag_of_Vietnam.svg" alt="VietNam">

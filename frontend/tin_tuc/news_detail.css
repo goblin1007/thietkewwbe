@@ -1,5 +1,11 @@
+       .container {
+    max-width:1000px;  /* Giới hạn chiều rộng */
+    margin: auto;      /* Căn giữa */
+    padding: 0 20px;   /* Cách lề hai bên */
+}
 
-        .body {
+       
+       .body {
             font-family: Arial, sans-serif;
             
             margin: auto;
@@ -25,4 +31,8 @@
             color: #1a3c8b;
             font-weight: bold;
             float: right;
+        }
+
+        .ontent_news{
+            margin-top: 25px
         }
